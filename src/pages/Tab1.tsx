@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonItem, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
@@ -12,33 +12,22 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
+        
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">HOME</IonTitle>
           </IonToolbar>
         </IonHeader>
         
-        
-        <IonList>
-      <IonItemSliding>
-        <IonItem>
-          <IonLabel>Item</IonLabel>
+       <IonItem>
+          <IonLabel>Checkbox</IonLabel>
+          <IonCheckbox slot="start" />
         </IonItem>
-        <IonItemOptions side="end">
-          <IonItemOption onClick={() => {}}>Unread</IonItemOption>
-        </IonItemOptions>
-      </IonItemSliding>
 
-      <IonItemSliding>
         <IonItem>
-          <IonLabel>Item</IonLabel>
+          <IonLabel>Range</IonLabel>
+          <IonRange></IonRange>
         </IonItem>
-        <IonItemOptions side="end">
-          <IonItemOption onClick={() => {}}>Unread</IonItemOption>
-        </IonItemOptions>
-      </IonItemSliding>
-    </IonList>
-        
         
       </IonContent>
     </IonPage>
