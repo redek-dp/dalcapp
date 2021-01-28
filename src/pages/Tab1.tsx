@@ -1,6 +1,5 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonList, IonItem, IonLabel, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
@@ -19,7 +18,23 @@ const Tab1: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         
-       <ExploreContainer name="HOME JOPO" />
+       <IonList>
+      <IonItem>
+        <IonLabel>Pokémon Yellow</IonLabel>
+      </IonItem>
+      <IonItem>
+        <IonLabel>Mega Man X</IonLabel>
+      </IonItem>
+      <IonItem>
+        <IonLabel>The Legend of Zelda</IonLabel>
+      </IonItem>
+      <IonItem>
+        <IonLabel>Pac-Man</IonLabel>
+      </IonItem>
+      <IonItem>
+        <IonLabel>Super Mario World</IonLabel>
+      </IonItem>
+    </IonList>
         
       </IonContent>
     </IonPage>
