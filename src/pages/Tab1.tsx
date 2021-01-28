@@ -17,7 +17,29 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">HOME</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="HOME page" />
+        
+        
+        <IonList>
+      <IonItemSliding>
+        <IonItem>
+          <IonLabel>Item</IonLabel>
+        </IonItem>
+        <IonItemOptions side="end">
+          <IonItemOption onClick={() => {}}>Unread</IonItemOption>
+        </IonItemOptions>
+      </IonItemSliding>
+
+      <IonItemSliding>
+        <IonItem>
+          <IonLabel>Item</IonLabel>
+        </IonItem>
+        <IonItemOptions side="end">
+          <IonItemOption onClick={() => {}}>Unread</IonItemOption>
+        </IonItemOptions>
+      </IonItemSliding>
+    </IonList>
+        
+        
       </IonContent>
     </IonPage>
   );
