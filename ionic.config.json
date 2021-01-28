@@ -1,0 +1,8 @@
+{
+  "name": "DALCAPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "286acceb"
+}
